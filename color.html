@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Color</title>
+    <style>
+        #mainDiv{
+            margin-top: 5rem;
+        }
+        #description{
+            font-size: 0.9rem;
+        }
+        .space{
+            display: none;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+        footer{
+            margin-top: auto;
+        }
+
+        @media (max-width: 360px){
+            .title{
+                font-size: 1.0rem;
+            }
+            .destroy{
+              display: none;
+            }
+        }
+        @media(max-width: 575.98px){
+            .title{
+                font-size: 1.5rem;
+            }
+        }
+        @media(max-width: 991.98px){
+          .central{
+              text-align: center;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <header>
+                <nav class="navbar navbar-expand-sm navbar-light my-1 align-middle">
+                    <img src="img/CC-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
+                    <p class="font-weight-bold d-none no-padding borderBottom" id="model">Model R</p>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="font-weight-bold ancorHome borderBottom pointer">Model R</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="font-weight-light transparente ancorHome erase pointer">Model IQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="font-weight-light transparente ancorHome erase pointer">Model Mobi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="font-weight-light transparente ancorHome erase pointer">Model Charlie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="font-weight-light transparente ancorHome erase pointer">Model Italy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        <!-- end of header -->
+        <!-- Main content -->
+        <div class="row mt-4">
+            <div class="col-xl-6 col-lg-6 col-md-1 col-sm-1 col-1"></div>
+            <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10 col-10">
+                <div class="row ">
+                    <p class="title">Color</p>
+                </div>
+                <div class="row gray" id="description">
+                    <p id="txtDescription"></p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-1 col-sm-1 col-1"></div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/4.png" class="img-fluid" id="colorCar"alt="Red Car">
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-2 erase"></div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 central">
+                                <p class="font-weight-bold" id="colorName">Metalic Vermilion</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 erase"></div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 central">
+                                <p class="font-weight-bold red" id="colorPrice">Included</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                <div class="row mb-4">
+                    <div class="col-1 destroy"></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                        <img src="img/dot-red-off.png" class="img-fluid pointer dot" id="dotRed" alt="Dot red">
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" >
+                        <img src="img/dot-blue-off.png" class="img-fluid pointer dot" id="dotBlue" alt="Dot blue">
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                        <img src="img/dot-grey-off.png" class="img-fluid pointer dot" id="dotGrey" alt="Dot grey">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Main content -->
+    </div>
+    <!-- geneal footer -->
+    <footer class="container-fluid shadow-lg" id="generalFooter">
+            <div class="row align-items-end">
+                <div class="col-1 erase"></div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-9 col-8">
+                    <p class="generalFooterTxtSmall total">Total</p>
+                    <p class="generalFooterTxtLarge total" id="totalColor"></p>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-1 col-1 erase">
+                    <p class="generalFooterTxtSmall">Model R</p>
+                </div>
+                <div class="col-1 erase align-text-top">
+                    <div class="row mb-3">
+                        <span class="generalFooterTxtSmall" id="numberIdColor">75&nbsp;</span>
+                        <span class="generalFooterTxtSmall red" id="letterIdColor">P</span>
+                    </div>
+                </div>
+                <div class="col-1 erase">
+                    <img src="img/dot-grey-white.png" class="icon mb-3" id="dotColor" alt="dot">
+                </div>
+                <div class="col-3 erase">
+                    <img src="img/7.png" class="icon mb-3 space" alt="Wheel">
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
+                    <a href="#" class="noUnderline nextFooter">
+                        <p class="d-inline-block" id="next">next</p> <img src="img/arrow.svg" alt="Arrow to left img-fluid">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    <!-- end of general footer -->
+  <script src="js/appColor.js"></script>
+</body>
+</html>
