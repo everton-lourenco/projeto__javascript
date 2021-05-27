@@ -1,0 +1,106 @@
+  
+@import url('https://fonts.googleapis.com/css?family=Saira+Condensed:300,400,500&display=swap');
+
+/* General configuration */
+:root{
+    --red: #ab1725;
+    --black: #0f1c2d;
+    --grey: #a59292;
+    --mainTransition: all 0.3s linear;
+}
+body{
+    font-family: 'Saira Condensed', sans-serif;
+}
+.red{
+    color: var(--red);
+}
+.black{
+    color: var(--black);
+}
+.grey{
+    color: var(--grey);
+}
+.transparente{
+    color: rgba(0,0,0, 0.7) !important;
+}
+.noUnderline:hover{
+    text-decoration: none;
+}
+.title{
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+}
+.pointer{
+    cursor: pointer;
+}
+/* End of General configuration */
+
+/*General Footer*/
+.ancorHome{
+    margin: 0 1rem 0 1rem;
+}
+.borderBottom{
+    border-bottom: var(--red) 2.2px solid
+}
+
+/*End of General Footer*/
+
+/* General footer */
+.generalFooterTxtLarge{
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    color: var(--red);
+}
+.generalFooterTxtSmall{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.generalFooterTxtSmallRed{
+    color: var(--red);
+    font-weight: 600;
+}
+#next{
+    color: var(--black);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-right: 0.5rem;
+}
+.nextFooter{
+    opacity: 0.5;
+    transition: all 0.2s linear;
+}
+.total{
+    line-height: 1.2rem;
+}
+.generalDivContainer{
+    padding-left: 11rem;
+    padding-right: 11rem;
+}
+.hrClass{
+    border: solid var(--red) 1.5px;
+    width: 2.4rem;
+}
+.hrTop{
+    top: 0.9rem;
+    left: 40.7rem;
+}
+.icon{
+    width: 2rem;
+}
+.additionalValue{
+    POSITION: absolute;
+    right: 0;
+    top: 6px;
+}
+@media (max-width: 575.98px) {
+    #model{
+        display: inline-block !important;
+    }
+}
+@media (max-width: 767.98px) {
+    .erase{
+        display: none;
+    }
+}
+
+/* End of General footer */
