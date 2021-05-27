@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Resume</title>
+    <style>
+        #main{
+            margin-top: 5rem;
+        }
+        .bold{
+            font-weight: 600;
+        }
+        .final{
+            font-size: 1.5rem;
+        }
+        .line{
+            width: 100%;
+            height: 1px;
+            border: gray 0.1px solid;
+        }
+        #rebuild{
+            color: #0f1c2d;
+            letter-spacing: 0.4rem;
+            transition: all 0.1s linear;
+        }
+        #rebuild:hover{
+            font-size: 1.6rem;
+        }
+        #rebuild:hover #rebuildIcon{
+            width: 1.6rem;
+        }
+        nav{
+            margin-bottom: 0.25rem
+        }
+        #veicle{
+            margin-top: 6rem;
+        }
+
+        @media (max-width: 575.98px) {
+            .erase{
+                display: none;
+            }
+            #rebuild:hover{
+                font-size: 1rem;
+            }
+            #rebuild:hover #rebuildIcon{
+                width: 1rem;
+            }
+            #veicle{
+                margin-top: 0.5rem;
+                /* justify-content: center; */
+                margin-left: auto;
+                margin-right: auto;
+            }
+            nav{
+                margin-bottom: -2rem;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .erase{
+                display: none;
+            }
+            #rebuild:hover{
+                font-size: 1rem;
+            }
+            #rebuild:hover #rebuildIcon{
+                width: 1rem;
+            }
+            
+            #veicle{
+                margin-top: 0.5rem;
+                /* justify-content: center; */
+                margin-left: auto;
+                margin-right: auto;
+            }
+            nav{
+                margin-bottom: -2rem;
+            }
+            .title{
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-light my-1 align-middle">
+                <img src="img/CC-logo.svg"  class="d-inline img-fluid" alt="logo da empresa">
+                <p class="font-weight-bold d-none no-padding borderBottom" id="model">Model R</p>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="font-weight-bold ancorHome borderBottom pointer">Model R</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-light transparente ancorHome erase pointer">Model IQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-light transparente ancorHome erase pointer">Model Mobi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-light transparente ancorHome erase pointer">Model Charlie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-light transparente ancorHome erase pointer">Model Italy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- end of header -->
+        <!-- Main content -->
+        <div class="row" id="main">
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7 spacing"></div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                <p class="title mb-3">Your <span class="font-weight-bold">Model</span> <span class="font-weight-bold red">R</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                <img src="#" class="img-fluid" id="veicle" alt="Carro final">
+            </div>
+
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1 col-1 erase"></div>
+
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                <div class="row mb-2">
+                    <div class="col-8">
+                        <p>Starting price</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="red text-right" id="startingPrice"></p>                         
+                    </div>
+                </div>
+                <div class="row mb-2"><hr class="line"></div>
+                <div class="row">
+                    <div class="col-8">
+                        <p id="resumeEngine"></p>                        
+                    </div>
+                    <div class="col-4">
+                        <p class="red text-right" id="plus1"></p>                         
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <p id="resumeColor"></p>                        
+                    </div>
+                    <div class="col-4">
+                        <p class="red text-right" id="plus2"></p>                         
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <p id="resumeWheels"></p>                        
+                    </div>
+                    <div class="col-4">
+                        <p class="red text-right" id="plus3"></p>                         
+                    </div>                    
+                </div>
+                <div class="row mb-3"><hr class="line"></div>
+                <div class="row mb-5">
+                    <div class="col-8">
+                        <p class="final">Final Price</p>                        
+                    </div>
+                    <div class="col-4">
+                        <p class="red final text-right" id="finalPrice"></p> 
+                    </div>                    
+                </div>
+                <div class="row pb-5">
+                    <div class="col-12 text-center">
+                        <a href="index.html" id="rebuild" class="text-uppercase noUnderline text-center">rebuild <img src="img/rebuild.svg" id="rebuildIcon" alt="rebuild icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Main content -->
+    </div>
+    <script src="js/appResume.js"></script>
+</body>
